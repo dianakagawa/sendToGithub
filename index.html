@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav>
+        <h1>Dojo Weather</h1>
+        <ul onclick="loading()">
+          <li>Burbank</li>
+          <li>Chicago</li>
+          <li>Dallas</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <section>
+      <h2>San Jose</h2>
+      <div class="change-temp">
+        <p>show temperature in</p>
+        <select name="temperature-unit" id="temperature-unit">
+          <option value="celcius">C°</option>
+          <option value="fahrenheit">F°</option>
+        </select>
+      </div>
+    </section>
+
+    <main>
+      <!-- today -->
+      <article>
+        <h3>Today</h3>
+        <img
+          src="./assets/some_rain.png"
+          alt="some rain is in the way"
+          width="100px"
+        />
+        <p>some rain</p>
+        <div class="temp">
+          <p class="max">24°</p>
+          <p class="min">18°</p>
+        </div>
+      </article>
+
+      <!-- tomorrow -->
+      <article>
+        <h3>Tomorrow</h3>
+        <img src="./assets/some_sun.png" alt="very sunny" width="100px" />
+        <p>some sun</p>
+        <div class="temp">
+          <p class="max">27°</p>
+          <p class="min">19°</p>
+        </div>
+      </article>
+
+      <!-- friday -->
+      <article>
+        <h3>Friday</h3>
+        <img
+          src="./assets/some_clouds.png"
+          alt="some clouds in the way"
+          width="100px"
+        />
+        <p>some clouds</p>
+        <div class="temp">
+          <p class="max">21°</p>
+          <p class="min">16°</p>
+        </div>
+      </article>
+
+      <!-- saturday -->
+      <article>
+        <h3>Saturday</h3>
+        <img
+          src="./assets/some_sun.png"
+          alt="some clouds in the way"
+          width="100px"
+        />
+        <p>some sun</p>
+        <div class="temp">
+          <p class="max">26°</p>
+          <p class="min">21°</p>
+        </div>
+      </article>
+    </main>
+
+    <div class="cookies">
+      <div class="container">
+        <img src="./assets/cookie.png" alt="a cookie!" width="60px" />
+        <div class="cookie-text">
+          <h4>Stop! Cookie time</h4>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyze traffic.
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Read more...</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="accept-btn">
+        <button onclick="acceptCookies()" class="btn">I accept</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>DojoWeather© 2022</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

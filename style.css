@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: skyblue;
+  color: whitesmoke;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+nav h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  border-bottom: 2px solid black;
+}
+
+section select {
+  padding: 5px 10px;
+}
+
+.change-temp {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+article {
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+article img {
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.max {
+  font-size: large;
+  font-weight: 700;
+  color: red;
+}
+
+.min {
+  font-size: large;
+  font-weight: 700;
+  color: dodgerblue;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 20px;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container img {
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+}
+
+.accept-btn {
+  text-align: right;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  background-color: skyblue;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: black;
+  box-shadow: 4px 4px black;
+}
+
+footer {
+  background-color: skyblue;
+  padding: 10px 20px;
+  text-align: right;
+}
